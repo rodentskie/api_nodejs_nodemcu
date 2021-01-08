@@ -1,0 +1,33 @@
+{
+  "name": "api_nodejs_nodemcu",
+  "version": "1.0.0",
+  "description": "NodeMCU NodeJS Interfacing",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app",
+    "dev": "nodemon src/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodentskie/api_nodejs_nodemcu.git"
+  },
+  "author": "Rodney Lingganay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodentskie/api_nodejs_nodemcu/issues"
+  },
+  "homepage": "https://github.com/rodentskie/api_nodejs_nodemcu#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "socket.io": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

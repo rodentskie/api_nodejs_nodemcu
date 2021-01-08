@@ -32,5 +32,5 @@ module.exports = { io }; // export before routes
 // module.exports = app;
 
 io.on("connection", (socket) => {
-  console.log("eut rhea connected");
+  console.log("someone connected");
 });

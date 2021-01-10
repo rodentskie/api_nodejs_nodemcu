@@ -17,20 +17,15 @@ const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}.`);
 });
-
 const io = require("socket.io")(server); //Bind socket.io to our express server.
 
 module.exports = { io }; // export before routes
 
 // no routes on this project;
 
-// const { webSockets } = require("./use-cases/leds/app");
+const { webSockets } = require("./use-cases/leds/app");
 
-// // initialize web socket
-// webSockets();
+// initialize web socket
+webSockets();
 
-// module.exports = app;
-
-io.on("connection", (socket) => {
-  console.log("someone connected");
-});
+module.exports = app;

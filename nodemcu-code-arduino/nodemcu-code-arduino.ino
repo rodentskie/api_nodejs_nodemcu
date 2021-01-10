@@ -5,8 +5,8 @@
 
 #define USER_SERIAL Serial
 
-const char *ssid = "OnePiece";
-const char *pass = "dFGSJZ8476";
+const char *ssid = "SSID";
+const char *pass = "paspaspas";
 
 int button = 5;
 int led = 4;

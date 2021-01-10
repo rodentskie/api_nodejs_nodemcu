@@ -1,6 +1,7 @@
 const webSocket = ({ ledsDb, io }) => {
   return function socket(info) {
     io.on("connection", (socket) => {
+      console.log("Someone has connected.");
       // if receive 1; on led
       socket.on("1", async (data) => {
         // insert to db

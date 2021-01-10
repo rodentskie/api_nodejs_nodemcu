@@ -33,3 +33,7 @@ const { webSockets } = require("./use-cases/leds/app");
 webSockets();
 
 module.exports = app;
+
+
+// Please note the version of the socket.io, socket.io-client, and 
+// WebSockets Library in arduino; 

@@ -21,6 +21,10 @@ const io = require("socket.io")(server); //Bind socket.io to our express server.
 
 module.exports = { io }; // export before routes
 
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome to NodeMCU Socket API</h1>");
+});
+
 // no routes on this project;
 
 const { webSockets } = require("./use-cases/leds/app");
